@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="get">
+        <h1 class="mainHeading">Payment Form</h1>
+        <hr />
+        <h2>User Details</h2>
+        <p>
+          Name:
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="Enter your name"
+          />
+        </p>
+        <fieldset>
+          <legend>Gender</legend>
+          <p>
+            Male <input type="radio" name="gender" id="male" required />
+            <br />
+            <br />
+
+            female <input type="radio" name="gender" id="female" required />
+          </p>
+        </fieldset>
+        <p>
+          Address:
+          <textarea
+            name="address"
+            id="address"
+            cols="100"
+            rows="10"
+            placeholder="Enter your address"
+          ></textarea>
+        </p>
+        <p>
+          Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="abc@gmail.com"
+          />
+        </p>
+        <p>
+          Pincode:
+          <input
+            type="number"
+            name="pincode"
+            id="pincode"
+            required
+            placeholder="123456"
+          />
+        </p>
+
+        <h2>Billing Details</h2>
+        <p> Amount Payable Rs. :
+        <input
+            type="number"
+            name="number"
+            id="Payment"
+            required
+            placeholder="Amount in Repees"
+          /> 
+</p>
+        <input type="Credit Card" value="Credit Card" />
+        <br /><br />
+        <input type="Debit Card" value="Debit Card" />
+        <p>
+          Card Type:
+          <select name="card_type" id="card_type" required>
+            <option value="">--Select a Card Type--</option>
+            <option value="visa">Visa</option>
+            <option value="Master Card">Master Card</option>
+            <option value="rupay">Rupay</option>
+          </select>
+        </p>
+        <p>
+          Card Number:
+          <input
+            type="number"
+            name="card_number"
+            id="card_number"
+            required
+            placeholder="1111-2222-3333-4444"
+          />
+        </p>
+        <p>
+          Expiration Date:
+          <input type="date" name="exp_date" id="exp_date" required />
+        </p>
+        <p>
+          CVV:
+          <input
+            type="password"
+            name="cvv"
+            id="cvv"
+            required
+            placeholder="123"
+          />
+        </p>
+        <p>
+          Name On The Card:
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="  Enter your Name on the Card"
+          />
+        </p>
+        <p>
+          Bank Name:
+          <input
+            type="text"
+            name="Bank name"
+            required
+            placeholder="Enter the Bank Name"
+          />
+        </p>
+        <br />
+        <hr />
+        <br />
+        <input type="submit" value="Pay Now" />
+      </form>
+      <p>
+        <br />
+        Accepted Card:
+        <img
+          src="https://d28wu8o6itv89t.cloudfront.net/images/TYPESOFDEBITCARDJPG-1578919599688.jpeg"
+          alt=""
+          width="25%"
+          align="top"
+        />
+      </p>
+    </div>
+  </body>
+</html>
